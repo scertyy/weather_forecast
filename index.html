@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Прогноз погоды</title>
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+<body>
+<div class="lds-ring lds-ring_none">
+    <div class="lds-ring__item">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<div class="header">
+    <div class="header__container">
+        <a href="/weather-forecast/index.html?" class="header__logo">Прогноз погоды</a>
+        <form class="city-search-form">
+            <input type="text" class="city-search-form__input default-input" placeholder="Введите город...">
+            <button type="submit" class="city-search-form__button default-button">Найти</button>
+        </form>
+    </div>
+</div>
+
+<div class="main-section">
+    <section class="main-section__item">
+        <div class="main-section__container">
+            <div class="city-show">
+                <span class="city-show__title"></span> <span class="city-show__name"></span>
+            </div>
+            <div class="daily-forecast"></div>
+        </div>
+    </section>
+    <section class="main-section__item">
+        <div class="main-section__container main-section__container_swiped">
+            <button class="main-section_button default-button">
+                Назад
+            </button>
+            <div class="detail-info"></div>
+        </div>
+    </section>
+</div>
+
+
+<script src="./js/index.js"></script>
+</body>
+</html>
